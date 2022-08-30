@@ -349,3 +349,55 @@ int number2 = Преобразовать.ToInt32(консоль.Прочитай
 
 // DZ :
 
+// Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
+// 456 -> 5
+// 782 -> 8
+// 918 -> 1
+
+// int number = Convert.ToInt32(Console.ReadLine());
+// int secondnumber = number / 10;
+// int result = secondnumber % 10;
+// Console.WriteLine(result);
+
+
+// Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
+// 645 -> 5
+// 78 -> третьей цифры нет
+// 32679 -6
+
+// string number = Console.ReadLine();
+// int size = number.Length;
+// Console.WriteLine(size);
+// if (number.Length < 3)
+// {
+//     Console.WriteLine("Строка не имеет 3 символа");
+// }
+// else 
+//  {
+//      Console.WriteLine(size);
+//  }
+
+// int number = Convert.ToInt32(Console.ReadLine());
+// int number3 = number % 10;
+// Console.WriteLine(number3);
+// if (number < 2)
+// {
+//     Console.WriteLine( number3 + "третьей цифры  нет");
+// }
+
+
+//  Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет,
+// является ли этот день выходным.
+// 6 -> да
+// 7 -> да
+// 1 -> нет
+
+// int number = new Random().Next(1,7);
+// if (number <=5)
+// {
+//     Console.WriteLine(number + "нет");
+// }
+// else 
+//  {
+//     Console.WriteLine(number + "да");
+//  }
