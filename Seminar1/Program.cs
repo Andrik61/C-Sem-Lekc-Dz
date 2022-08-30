@@ -77,6 +77,97 @@
 //     count++;
 // }
 
-// Seminar
+// Seminar:
 
+//Напишите программу, которая на вход принимает число и выдаёт его квадрат (число умноженное на 
+// самого себя).
+// Например : 4 -> 16
+            //   -3 -> 9
+            //   -7 -> 49
 
+// Console.WriteLine("Введите число: ");
+// string firstNumber = Console.ReadLine(); // "2" + "2" = "22" - Конкатенация; 2+2=4
+// string secondNumber = Console.ReadLine();
+// Console.WriteLine(firstNumber + secondNumber);
+
+// Console.WriteLine("Введите число: ");
+// int number = Convert.ToInt32(Console.ReadLine()); // "2" + "2" = "22" - Конкатенация; 2+2=4
+// int square = number * number;
+// Console.WriteLine(square);
+
+// 1. Напишите программу, которая на вход принимает два числа и проверяет, является ли первое число квадратом второго.
+// a = 25, b = 5 -> да
+// a = 2, b = 10 -> нет
+// a = 9, b = -3 -> да
+// a = -3 b = 9 -> нет
+
+// Console.Write("Введите число №1: ");
+// int firstnumber = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите число №2: ");
+// int secondnumber = Convert.ToInt32(Console.ReadLine());
+// if (firstnumber == secondnumber * secondnumber) // f = 25; s =5
+// {
+//     Console.WriteLine(firstnumber + "является квадратом от " + secondnumber);
+// }
+// // "!=" - проверка на неравенство - 5 != 5 - False;
+// // "==" - проверка на равенство - 5 == 5 - True;
+// else // if (firstnumber != secondnumber * secondnumber); 
+// {
+//     Console.WriteLine(firstnumber + " Не является квадратом от " + secondnumber);
+// }
+// camelCase
+// Напишите программу, которая будет выдавать название дня недели по заданному номеру.
+// 3 -> Средаж;  5 -> Пятница;
+
+// int daynumber = Convert.ToInt32(Console.ReadLine());
+// if (daynumber == 1)
+// {
+//     Console.WriteLine("Понедельник");
+// }
+// if (daynumber == 2)
+// {
+//     Console.WriteLine("Вторник");
+// }
+// if (daynumber == 3)
+// {
+//     Console.WriteLine("Среда");
+// }
+// if (daynumber == 4)
+// {
+//     Console.WriteLine("Четверг");
+// }
+// if (daynumber == 5)
+// {
+//     Console.WriteLine("Пятница");
+// }
+// if (daynumber == 6)
+// {
+//     Console.WriteLine("Суббота");
+// }
+// if (daynumber == 7)
+// {
+//     Console.WriteLine("Воскресенье");
+// }
+
+// Напишите программу, которая на вход принимает одно число (N), а на выходе показывает все
+// целые числа в промежутке от -N до N.
+// 4 -> "-4, -3, -2, -1, 0, 1, 2, 3, 4"
+// 2 -> " -2, -1, 0, 1, 2"
+
+// Console.Write("Введите число N: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// if (number < 0)
+// {
+//      number *= (-1); // -5 * (-1) = 5 - N
+// }
+// // -N = N * (-1)
+// // [-N ; N] -> [negativNumber; number]
+// int negativNumber = number * (-1);
+// while (negativNumber <= number) // пока справедливо условие - negativNumber = negativNumber +1
+// {                                      //                     negativNumber <= number      
+//     Console.WriteLine(negativNumber);  //                     number = 4
+//     negativNumber++;                   //                     negativNumber =- 4       
+// }     // negativNumber = negativNumber + 1 - Инкремент  //    -4,-3,-2,-1,0,1,2,3,4
+//       // negativNumber --   - Декремент     
+
+// DZ :
