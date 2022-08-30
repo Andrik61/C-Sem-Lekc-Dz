@@ -246,3 +246,106 @@ int number2 = Преобразовать.ToInt32(консоль.Прочитай
 // {
 // Консоль.WriteLine(number + "нечётное" );
 // } 
+
+// Seminar 2 :
+
+// Решение Dz :
+// int N = 5;
+// int start = -4; // первое четное число - 2
+// while (start <= N)
+// {
+//    Console.WriteLine(start);
+//    start += 2;  // start = start + 2
+// }
+
+// Напишите программу, которая выводит случайное число из отрезка [10, 99] и показывает
+//наибольшую цифру числа.
+// 78 -> 8
+// 12-> 2
+// 85 -> 8
+
+// int number = new Random().Next(10,100);
+// // [10;100)
+// // Console.WriteLine($"Рандомное число: {number}"); // - Интерполяция
+// // Console.WriteLine($"Текст: {В фигурных скобках - переменная}") - Интерполяция
+// // Console.WriteLine("Рандомное число: " + number); // Конкатенация - сложение строк
+// // camelCase
+// int firstDigit = number / 10;
+// int secondDigit = number % 10;
+// int maximum = firstDigit; // Пусть максимум - это 1 число (количество десятков)
+// if (maximum < secondDigit) maximum = secondDigit;
+// Console.WriteLine($"Максимальная цифра в числе {number} - это {maximum}");
+
+// 11. Напишите программу, которая выводит случайное трёхзначное число и удаляет вторую цифру
+// этого числа.
+// 456 -> 46   // 456 -> 4    //456->6     // 4,6->46
+// 782 -> 72   // 456/100=4   //456%10=6   // 4 десятка (4*10=40)
+// 918 -> 98
+                               // 6 единиц (6*1=6)
+//11.1
+                                       // 4*10+6=46
+// int number = new Random().Next(100, 1000);
+// Console.WriteLine(number);
+// int first1 = number / 100;
+// int second2 = number % 10;
+// int result = first1 * 10 + second2;
+// Console.WriteLine(result);
+
+ // Или : 11.2
+
+// int number = Convert.ToInt32(Console.ReadLine());
+// int result = (number/100) * 10 + number % 10 ;
+// Console.WriteLine($"Первая и третья цифра числа: {result}");
+
+//11.3
+                                                        
+// string number = Console.ReadLine();                  // 012 - []
+// Console.WriteLine(number[0] + "" + number[2]);       // 456
+
+// 12. Напишите программу, которая будет принимать на вход два числа и выводить, является ли
+// второе число кратным первому. Если число 2 не кратно числу 1, то программа выводит остаток 
+// от деления.
+// 34, 5 -> не кратно, остаток 4
+// 16, 4 -> кратно 
+
+ // 12.1
+
+// Console.WriteLine("Введите число 1: ");
+// int number1 =Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число 2: ");
+// int number2 =Convert.ToInt32(Console.ReadLine());
+// if (number1 % number2 == 0)
+// {
+//     Console.WriteLine("Кратно");
+// }
+// else
+// {
+//     Console.WriteLine("Не кратно, остаток" + number1 % number2);
+// }
+
+// 12.2
+
+// Console.Write("Введите первое число: ");
+// int firstNumber = Convert.ToInt32(Console.ReadLine());
+
+// Console.Write("Введите второе число: ");
+// int secondNumber = Convert.ToInt32(Console.ReadLine());
+
+// if (firstNumber % secondNumber == 0) Console.WriteLine("Кратное");
+// else Console.WriteLine($"Остаток от деления: {firstNumber % secondNumber}");
+
+// 14. Напишите программу, которая принимает на вход число и проверяет, кратно ли оно 
+// одновременно 7 и 23.
+// 14 -> нет
+// 46 -> нет
+// 161 -> да
+
+// Console.Write("Введите число: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// // &&
+// // апельсины и яблоки - и то, и то (1 и 1 - True(1) или 0 и 0 False(0))
+// if (number % 7 == 0 && number % 23 == 0) Console.WriteLine("да");
+// else Console.WriteLine("нет");
+
+// DZ :
+
